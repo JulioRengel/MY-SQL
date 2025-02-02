@@ -1,0 +1,6 @@
+USE sakila;
+
+SELECT * 
+FROM actor
+WHERE first_name LIKE 'A%';
+/*WHERE first_name LIKE '%B'; */
