@@ -1,0 +1,6 @@
+USE sakila;
+SELECT * 
+FROM actor
+WHERE first_name REGEXP '^[ger]a'
+
+/* WHERE first_name REGEXP '^a|^d|r' */
