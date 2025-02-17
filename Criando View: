@@ -1,0 +1,10 @@
+USE sakila;
+CREATE VIEW Vendas_por_Cliente AS
+SELECT
+    cus.customer_id,
+    cus.first_name,
+    cus.last_name,
+    pay.amount
+FROM customer cus
+JOIN payment pay
+    ON cus.customer_id = pay.customer_id
