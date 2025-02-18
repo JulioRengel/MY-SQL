@@ -1,0 +1,46 @@
+--DROP DATABASE Carros
+CREATE DATABASE Carros
+
+USE carros;
+CREATE TABLE Marcas (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome_marca VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id)
+);
+ALTER TABLE marcas ADD origem VARCHAR(100); 
+CREATE TABLE Inventario (
+    id INT NOT NULL AUTO_INCREMENT,
+    modelo VARCHAR(250) NOT NULL,
+    transmissao VARCHAR(100) NOT NULL,
+    motor VARCHAR(100) NOT NULL,
+    combustivel VARCHAR(100) NOT NULL,
+    ano YEAR NOT NULL,
+    marcas_id INT NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (marcas_id) REFERENCES Marcas(id)
+);
+CREATE TABLE Clientes (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    sobrenome VARCHAR(100) NOT NULL,
+    endereço VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO clientes (nome, sobrenome, endereço) 
+    VALUES ('João', 'Silva', 'Rua 1, 123'),
+    ('Maria', 'Santos', 'Rua 2, 456'),
+    ('José', 'Oliveira', 'Rua 3, 789'),
+    ('Ana', 'Pereira', 'Rua 4, 1011'),
+    ('Pedro', 'Carvalho', 'Rua 5, 1213');
+INSERT INTO marcas (nome_marca, origem) 
+    VALUES  ('Chevrolet', 'EUA'),
+            ('Ford', 'EUA'),
+            ('Fiat', 'Itália'),
+            ('Volkswagen', 'Alemanha'),
+            ('Toyota', 'Japão');
+INSERT INTO inventario (modelo, transmissao, motor, combustivel, ano, marcas_id) 
+    VALUES  ('Cruze', 'Automático', '1.8', 'Flex', 2019, 1),
+            ('Fusion', 'Automático', '2.0', 'Flex', 2019, 2),
+            ('Uno', 'Manual', '1.0', 'Flex', 2019, 3),
+            ('Gol', 'Manual', '1.0', 'Flex', 2019, 4),
+            ('Corolla', 'Automático', '2.0', 'Flex', 2019, 5);
