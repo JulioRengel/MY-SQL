@@ -1,0 +1,8 @@
+GRANT ALL 
+ON sakila.*
+TO Julio;
+SHOW GRANTS FOR Julio;
+GRANT ALL 
+ON *.*
+TO Carlos@localhost;
+SHOW GRANTS FOR Carlos@localhost;
