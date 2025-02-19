@@ -1,0 +1,7 @@
+--SELECT * FROM mysql.user;
+--USE mysql;
+--SELECT * FROM user;
+CREATE USER Julio IDENTIFIED BY '1234';
+CREATE USER Carlos@localhost IDENTIFIED BY '5678';
+CREATE USER Roberto@seguros.com IDENTIFIED BY '91011';
+SELECT * FROM mysql.user;
