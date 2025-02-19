@@ -1,0 +1,2 @@
+SET PASSWORD FOR Carlos@localhost = '2525';
+SELECT * FROM mysql.user;
