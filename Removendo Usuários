@@ -1,0 +1,4 @@
+DROP USER pricila;
+DROP USER joao@localhost;
+DROP USER ana;
+SELECT * FROM mysql.user;
