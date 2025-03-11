@@ -1,5 +1,5 @@
 # Curso de Banco de Dados SQL - Do Zero ao Avançado 🛠️💻
-Este repositório reúne os projetos e anotações desenvolvidos durante o curso Banco de Dados SQL do Zero ao Avançado. O curso foi projetado para ensinar desde os fundamentos do SQL até consultas e operações avançadas, capacitando profissionais para lidar com análise e gerenciamento de dados de forma eficaz.
+Este repositório reúne os projetos e anotações desenvolvidos durante o curso **Banco de Dados SQL do Zero ao Avançado**. O curso foi projetado para ensinar desde os fundamentos do SQL até consultas e operações avançadas, capacitando profissionais para lidar com análise e gerenciamento de dados de forma eficaz.
 
 # O que Aprendi 📗
 - **Fundamentos do SQL:**
